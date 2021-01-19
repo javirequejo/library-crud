@@ -5,8 +5,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node bin/app.js",
-    "nodemon": "nodemon bin/app.js"
+    "start": "node ./app.js",
+    "nodemon": "nodemon ./app.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
