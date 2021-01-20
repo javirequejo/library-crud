@@ -1,12 +1,13 @@
 {
   "name": "library-crud",
   "author": "Javier Requejo",
-  "description": "Library CRUD with titles, authors and formats.",
-  "version": "0.0.1",
+  "description": "Library CRUD app using Node.js, Express and MySQL to create an API with titles, authors and formats.",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./app.js",
     "nodemon": "nodemon ./app.js",
+    "test": "mocha --recursive",
     "update-db": "bash ./bin/updateDatabase.sh"
   },
   "dependencies": {
@@ -17,6 +18,9 @@
     "mysql": "^2.18.1"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^8.2.1",
     "nodemon": "^2.0.7"
   }
 }
