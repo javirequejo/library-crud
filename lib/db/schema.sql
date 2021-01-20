@@ -5,7 +5,7 @@ CREATE TABLE `format` (
   `code` varchar(5) NOT NULL,
   `description` longtext,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=156 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `author`;
@@ -17,7 +17,7 @@ CREATE TABLE `author` (
   `email` varchar(255) NOT NULL,
   `phone` varchar(12) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=156 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `title`;
@@ -31,7 +31,7 @@ CREATE TABLE `title` (
   `format` int(11) NOT NULL,
   FOREIGN KEY (format) REFERENCES format (id),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=156 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `author_title`;
@@ -43,4 +43,4 @@ CREATE TABLE `author_title` (
   FOREIGN KEY (author_id) REFERENCES author (id),
   FOREIGN KEY (title_id) REFERENCES title (id),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=156 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
