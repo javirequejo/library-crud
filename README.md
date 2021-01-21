@@ -7,7 +7,9 @@ Library CRUD app using Node.js, Express and MySQL to create an API with titles, 
 ```npm install```
 3. Create the database and dump the schema using the next command (you will have to introduce your mysql password twice):<br>
 ```npm run update-db```
-4. Run the project in development mode using the next command:<br>
+4. Run the tests using the next command:<br>
+```npm run test```
+5. Run the project in development mode using the next command:<br>
 ```npm run nodemon```
 > You can create the database manually in your mysql with a name 'library_crud' and dumping the schema.sql file into the db folder
 

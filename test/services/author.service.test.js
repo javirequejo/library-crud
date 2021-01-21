@@ -16,12 +16,14 @@ describe('Author Service', () => {
         it('Returns the authors list', async () => {
             const authorsList = [
                 {
+                    id: 1,
                     first_name: 'John',
                     last_name: 'Smith',
                     email: 'j.smith@gmail.com',
                     phone: '7567568345'
                 },
                 {
+                    id: 2,
                     first_name: 'JK',
                     last_name: 'Rowling',
                     email: 'jk.rowling@gmail.com',
