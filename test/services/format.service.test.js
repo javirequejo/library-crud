@@ -2,10 +2,10 @@
 const chai = require('chai')
 const chaiAsPromised = require('chai-as-promised')
 chai.use(chaiAsPromised)
+const { assert, expect } = chai
 const sinon = require('sinon')
 const formatService = require('../../lib/services/format.service')
 const formatRepository = require('../../lib/repository/format.repository')
-const { assert, expect } = require('chai')
 
 describe('Format Service', () => {
     afterEach(() => {
@@ -13,7 +13,7 @@ describe('Format Service', () => {
     })
 
     describe('Get all formats', () => {
-        it('Returns the format list', async () => {
+        it('Returns the formats list', async () => {
             const formatsList = [
                 {
                     id: 1,
@@ -36,7 +36,7 @@ describe('Format Service', () => {
     })
 
     describe('Create a new format', () => {
-        it('Creates a new format correctly', async () => {
+        it('Create a new format correctly', async () => {
             const newFormat = {
                 code: '12',
                 description: 'Food'
